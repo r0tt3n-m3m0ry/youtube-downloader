@@ -1,0 +1,8 @@
+# В этом файле размещаем ссылки на каналы авторов и название автора, которым мы назовем директорию с его видео
+# http://link.domain/author <<>> Author : string.split(' <<>> ') для получения отдельно ссылки и автора
+# Новые видео будут подгружаться, старые будут оставаться из-за кеша youtube-dl, который остается в директории
+# В случае удаления или перемещения видео из директории, в следующий раз это видео будет скачано снова
+
+https://www.youtube.com/user/TheBadComedian <<>> BadComedian
+https://www.youtube.com/channel/UC9MK8SybZcrHR3CUV4NMy2g <<>> Диджитализируй
+https://www.youtube.com/playlist?list=PLv_zOGKKxVpi6BSAuySAtX5KyCa50PSCz <<>> MoscowPython
