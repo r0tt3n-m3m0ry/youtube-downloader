@@ -15,7 +15,8 @@ with open(input('Enter name of file which contain the videos data: ')) as file_w
             pass
         else:
             link = file_string.split(' <<>> ')[0]
-            author = file_string.split(' <<>> ')[-1]
+            author = file_string.split(' <<>> ')[1]
+            content_type = file_string.split(' <<>> ')[-1].strip()
 
             try:
                 os.mkdir(author)
@@ -23,5 +24,12 @@ with open(input('Enter name of file which contain the videos data: ')) as file_w
                 pass
 
             os.chdir(author)
-            os.system(f'youtube-dl -i {link}')
+
+            if content_type == 'audio':
+                os.system(f'youtube-dl -i --extract-audio --audio-format mp3 {link}')
+            if content_type == 'video':
+                os.system(f'youtube-dl -i {link}')
+            else:
+                pass
+
             os.chdir('..')
