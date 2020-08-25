@@ -4,6 +4,12 @@
 
 # Установка
 
+Windows:
+
+Здесь же, на GitHub, во вкладке Releases, находится исполняемый файл для windows. Поместите его перед запуском в директорию, в которую хотите устанавливать видео, например на флешку или внешний жесткий диск, туда же поместите файл с данными для загрузки.
+
+Linux, MacOS:
+
 $ git clone https://github.com/r0tt3n-m3m0ry/youtube-downloader
 $ cd youtube-downloader
 $ pip3 install -r requirements.txt
