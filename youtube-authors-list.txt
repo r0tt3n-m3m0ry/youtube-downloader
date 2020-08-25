@@ -1,2 +1,2 @@
-#https://www.youtube.com/channel/UCMvT_Wl-Mj9KBucpB9nfddw <<>> cupOfCode <<>> video
-https://www.youtube.com/channel/UC0UK9eo_m6v4DDGXQKQf5Ww <<>> пидор <<>> audio
+https://www.youtube.com/channel/UCMvT_Wl-Mj9KBucpB9nfddw <<>> audio <<>> test <<>> my_channel
+https://www.youtube.com/channel/UC0UK9eo_m6v4DDGXQKQf5Ww <<>> audio <<>> test <<>> ivan_petrov
