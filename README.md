@@ -10,10 +10,10 @@ Windows:
 
 Linux, MacOS:
 
-$ git clone https://github.com/r0tt3n-m3m0ry/youtube-downloader
-$ cd youtube-downloader
-$ pip3 install -r requirements.txt
-$ python3 downloader.py
+$ git clone https://github.com/r0tt3n-m3m0ry/youtube-downloader  
+$ cd youtube-downloader  
+$ pip3 install -r requirements.txt  
+$ python3 downloader.py  
 
 # youtube-authors-list.txt
 
