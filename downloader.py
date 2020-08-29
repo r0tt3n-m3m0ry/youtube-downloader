@@ -4,6 +4,7 @@
 
 try:
     import youtube_dl
+    import plyer # Windows 10 notifications
 except:
     print('You have to install requirement modules via \'$ pip3 install -r requirements.txt\' before run this script.'); exit()
 
@@ -39,6 +40,14 @@ try:
 
                 os.chdir('..\\..') if os.name == 'nt' else os.chdir('../..')
 
+                try:
+                	plyer.notification.notify(app_name='YouTube Downloader', app_icon='icon.ico', title='YouTube Downloader', message=f'Downloaded videos from \'{author}\' in category \'{video_category}\'',)
+                except:
+                	continue
+    try:
+        plyer.notification.notify(app_name='YouTube Downloader', app_icon='icon.ico', title='YouTube Downloader', message='All videos downloaded! Have a nice day! :D',)
+    except:
+        pass
 except FileNotFoundError:
     print('File with this name not found!'); exit()
 
