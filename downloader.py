@@ -48,6 +48,7 @@ try:
         plyer.notification.notify(app_name='YouTube Downloader', app_icon='icon.ico', title='YouTube Downloader', message='All videos downloaded! Have a nice day! :D',)
     except:
         pass
+    
 except FileNotFoundError:
     print('File with this name not found!'); exit()
 
