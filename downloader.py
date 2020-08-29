@@ -40,11 +40,11 @@ try:
                 os.chdir('..\\..') if os.name == 'nt' else os.chdir('../..')
 
                 try:
-                	plyer.notification.notify(app_name='YouTube Downloader by r0tt3n-m3m0ry', title='YouTube Downloader', message=f'Downloaded {content_type}s from \'{author}\' in category \'{video_category}\'',)
+                	plyer.notification.notify(app_name='YouTube Downloader by r0tt3n-m3m0ry', title='YouTube Downloader', message=f'Downloaded {content_type}s from \'{author}\' in category \'{video_category}\'')
                 except:
                 	continue
     try:
-        plyer.notification.notify(app_name='YouTube Downloader by r0tt3n-m3m0ry', title='YouTube Downloader', message='All videos downloaded! Have a nice day! :D',)
+        plyer.notification.notify(app_name='YouTube Downloader by r0tt3n-m3m0ry', title='YouTube Downloader', message='All videos downloaded! Have a nice day! :D')
     except:
         pass
     
