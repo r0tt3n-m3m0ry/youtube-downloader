@@ -31,9 +31,9 @@ try:
                 os.chdir(f'{video_category}\\{author}') if os.name == 'nt' else os.chdir(f'{video_category}/{author}')
 
                 if content_type == 'audio':
-                    os.system(f'youtube-dl -i --extract-audio --embed-thumbnail --audio-format mp3 {link}')
+                    os.system(f"youtube-dl -i -f best --extract-audio --embed-thumbnail --audio-format mp3 {link}")
                 elif content_type == 'video':
-                    os.system(f'youtube-dl -i {link}')
+                    os.system(f"youtube-dl -i -f best {link}")
                 else:
                     pass
 
